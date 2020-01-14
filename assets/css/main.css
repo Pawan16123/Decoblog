@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
     
 }
 button{
@@ -105,16 +106,17 @@ section.banner{
 }
 
 .banner h1{
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     padding-top: 10px;
 }
 .banner-txt{
     position: absolute;
-    width: 340px;
+    width: 350px;
     left: 100px;
     top: 40%;
     z-index: 100;
     color: white;
+    font-family: sans-serif;
 }
 .banner-right .shapeme{
     display: inline-block;
