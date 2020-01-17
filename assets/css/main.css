@@ -139,6 +139,16 @@ section.banner{
     right: -10px;
     font-size: 12px;
 }
+
+/* Signupletter */
+.newsletter{
+    padding-top: 60px;
+}
+
+
+
+
+
 @media (min-width: 1600px){
     section.banner{
         width: 100%;
