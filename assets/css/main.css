@@ -187,13 +187,13 @@ section.banner{
 section{width: 100%;}
 
 /* Grids */
-section.grids{
+/* section.grids{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 80px;
     width:100%;
     background: green;
-}
+} */
 /* 
 section.grids .boxes:first-of-type{
     margin-left: 0;
@@ -228,10 +228,11 @@ section.grids .row3
 
 /* Isotope : https://codepen.io/desandro/pen/ClgeH */
 /* second link: https://codepen.io/desandro/pen/zEAwi */
+/* final:https://codepen.io/Giri527/pen/zYxmxMw */
 
 .grid {
   background: #DDD;
-  height: 75%; /* inherit height from body */
+  height: 1600px; /* inherit height from body */
 }
 
 
@@ -251,9 +252,10 @@ section.grids .row3
     height: 100px;
     margin: 5px;
     padding: 10px;
-    background: red;
+    background: lightcoral;
     color: white;
     font-size: 50px;
+    text-align: center;
 }
 
 .grid-item--height1 { 
