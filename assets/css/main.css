@@ -25,6 +25,7 @@ header{
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
+    z-index: 999;
 }
 .title-logoText img{
     height: 55px;
@@ -183,19 +184,15 @@ section.banner{
     padding: 14px;
     line-height: 0;
 }
+section{width: 100%;}
 
 /* Grids */
 section.grids{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 80px;
-}
-
-section.grids .boxes{
-    width: 360px;
-    height: 515px;
-    background-color: lightcoral;
-    margin: 10px 10px
+    width:100%;
+    background: green;
 }
 /* 
 section.grids .boxes:first-of-type{
@@ -205,6 +202,16 @@ section.grids .boxes:first-of-type{
 section.grids .boxes:last-child{
     margin-right: 0;
 }                              */
+/* 
+section.grid .boxes{
+    width: 360px;
+    height: 515px;
+    background-color: lightcoral;
+    margin: 10px 10px
+} */
+
+/* .grid-item { width: 360px; height:400px; background-color: lightcoral; }
+.grid-item--width2 { width: 50%; } */
 /* flexbox way */
 /* section.grids{
     display: flex;
@@ -218,6 +225,61 @@ section.grids .row3
     display: flex;
 }
  */
+
+/* Isotope : https://codepen.io/desandro/pen/ClgeH */
+/* second link: https://codepen.io/desandro/pen/zEAwi */
+
+.grid {
+  background: #DDD;
+  height: 75%; /* inherit height from body */
+}
+
+
+/* clear fix */
+.grid:after, .grids:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 50px;
+}
+
+.grid-item--height1 { 
+    height: 482px; 
+}
+.grid-item--height2 { 
+    height: 560px; 
+}
+.grid-item--height3 { 
+    height: 400px; 
+}
+.grid-item--height4 { 
+    height: 514px; 
+}
+.grid-item--height5 { 
+    height: 329px; 
+}
+.grid-item--height6 { 
+    height: 555px; 
+}
+.grid-item--height10 { 
+    height: 482px; 
+}
+.grid-item--height11 { 
+    height: 454px; 
+}
 
 @media (min-width: 1600px){
     section.banner{
