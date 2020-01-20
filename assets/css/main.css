@@ -13,6 +13,7 @@ html,
 body{
     width: 100%;
     height: 100%;
+    /* overflow-x: hidden; */
 }
 header{
     /* width: 1238px; */
@@ -89,6 +90,7 @@ section.banner{
     max-width: 100%;
     top: 55px;
     padding: 0 50px;
+    overflow-x: hidden;
 }
 .banner img{
     margin: 0 auto;
@@ -230,20 +232,21 @@ section.grids .row3
 /* second link: https://codepen.io/desandro/pen/zEAwi */
 /* final:https://codepen.io/Giri527/pen/zYxmxMw */
 
-.grid {
+/* Isotope js grid */
+/* .grid {
   background: #DDD;
-  height: 1600px; /* inherit height from body */
+  height: 1600px; inherit height from body
 }
 
 
-/* clear fix */
+clear fix
 .grid:after, .grids:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* ---- .grid-item ---- */
+---- .grid-item ----
 
 .grid-item {
     position: relative;
@@ -281,8 +284,60 @@ section.grids .row3
 }
 .grid-item--height11 { 
     height: 454px; 
+} */
+
+
+.grid{
+    display: flex;
+    margin: 200px 50px 50px 50px;
+    width: fit-content;
+    overflow-x: hidden;
+}
+.row1,
+.row2,
+.row3,
+.row4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 25%;
+}
+.grid-item {
+    min-width: 300px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 0px;
+    background: lightcoral;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    
 }
 
+.grid-item--height1 { 
+    height: 482px; 
+}
+.grid-item--height2 { 
+    height: 560px; 
+}
+.grid-item--height3 { 
+    height: 400px; 
+}
+.grid-item--height4 { 
+    height: 514px; 
+}
+.grid-item--height5 { 
+    height: 329px; 
+}
+.grid-item--height6 { 
+    height: 555px; 
+}
+.grid-item--height10 { 
+    height: 482px; 
+}
+.grid-item--height11 { 
+    height: 454px; 
+}
 @media (min-width: 1600px){
     section.banner{
         width: 100%;
