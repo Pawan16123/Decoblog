@@ -26,10 +26,3 @@ function triggerMe(){
 //     console.log(height);
 
 // }
-
-$('.grid').isotope({ 
-    layoutMode: 'fitColumns',
-    itemSelector: '.grid-item',
-
-
-});
