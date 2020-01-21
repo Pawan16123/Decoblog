@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    vertical-align: middle;
     
 }
 button{
@@ -14,6 +15,7 @@ body{
     width: 100%;
     height: 100%;
     /* overflow-x: hidden; */
+    background-color: #f9f9fb;
 }
 header{
     /* width: 1238px; */
@@ -62,14 +64,14 @@ nav{
 header button:focus{
     outline: none;
 }
-.social-media i{
+header .social-media i{
     color: white;
     margin: 0 10px;
     position: relative;
     top: 20px;
     /* display: inline-block; */
 }
-.social-media a{
+header .social-media a{
     border-left: 1px solid black;
     border-bottom: 2px solid black;
     display: inline-block;
@@ -79,7 +81,7 @@ header button{
     border-left: 1px solid black;
     border-bottom: 2px solid black;
 }
-.social-media a:last-child{
+header .social-media a:last-child{
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 2px solid black;
@@ -289,9 +291,10 @@ clear fix
 
 .grid{
     display: flex;
-    margin: 200px 50px 50px 50px;
+    margin: 80px 50px 50px 50px;
     width: fit-content;
     overflow-x: hidden;
+    position: relative;
 }
 .row1,
 .row2,
@@ -309,9 +312,10 @@ clear fix
     padding: 0px;
     background: lightcoral;
     color: white;
-    font-size: 50px;
+    /* font-size: 50px; */
     text-align: center;
-    
+    box-shadow: 0px 4px 6px 3px #00000078;
+    position: relative;
 }
 
 .grid-item--height1 { 
@@ -325,6 +329,7 @@ clear fix
 }
 .grid-item--height4 { 
     height: 514px; 
+    background-color: white;
 }
 .grid-item--height5 { 
     height: 329px; 
@@ -338,6 +343,59 @@ clear fix
 .grid-item--height11 { 
     height: 454px; 
 }
+
+/* first */
+.first{
+    color: black;
+    background-color: white;
+
+}
+.box-body .tag,
+.box-body .date{
+    font-size: 10px;
+    color: lightgray;
+    text-transform: uppercase;
+}
+.box-body .heading{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.box-body article{
+    font-size: 15px;
+    padding: 20px;
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.grid .box-body .read-more{
+    font-size: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.grid .box-body a{
+    text-decoration: none;
+    color: black;
+}
+.grid .share-comment{
+    border-top: 1px solid lightgrey;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid .share-comment i{
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+
 @media (min-width: 1600px){
     section.banner{
         width: 100%;
