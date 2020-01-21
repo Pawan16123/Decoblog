@@ -349,23 +349,32 @@ clear fix
 
 /* first */
 .first,
-.third{
+.third,
+.eighth,
+.ninth,
+.twelveth
+{
     padding: 40px 20px;
     color: black;
     background-color: white;
 
 }
 /* ICON */
-.grid .icon i{
+.grid .icon i,
+.grid .icon-2 i{
     font-size: 20px;
     background-color: black;
     color: white;
     height: 40px;
     width: 40px;
     padding-top: 10px;
+    box-shadow: 0px 0px 2px 1px lightgrey;
 }
 .first .icon,
-.third .icon{
+.third .icon,
+.eighth .icon,
+.eleventh .icon,
+.twelveth .icon{
     position: absolute;
     left: 50%;
     margin-left: -20px;
@@ -456,7 +465,7 @@ clear fix
     padding-top: 10px;
 }
 
-/* Icon */
+/* sixth - Icon */
 .grid .sixth .icon i{
     font-size: 15px;
     background-color: white;
@@ -499,15 +508,87 @@ clear fix
     border-top: 1px solid #999999;
     width: 40px;
     position: relative;
-    top: 10px;
+    top: 12px;
+    left: -70px;
 }
 .grid .seventh p.read-more::before{
     display: inline-block;
     content: "";
     border-top: 1px solid #999999;
     width: 40px;
+    position: relative;
+    bottom: 22px;
+    right: -70px;
 }
 
+/* tenth */
+.grid .tenth .second--image{
+    position: relative;
+}
+.grid .tenth .box-body{
+    padding: 0 20px;
+}
+.grid .tenth article{
+    text-align: center;
+}
+.grid .tenth .tenth-vdobar{
+    height: 30px;
+    background-color: #626262;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 220px;
+}
+.vdoseek{
+    width: 170px;
+    height: 5px;
+    background: linear-gradient(90deg, red 55%, white 45%);
+}
+.grid .tenth .tenth-vdobar{
+    color: white;
+}
+/* tenth-icon */
+.grid .tenth .icon{
+    position: relative;
+    top: -270px;
+}
+/* eleventh */
+.grid .eleventh a{
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 50px 20px;
+    color: white;
+}
+.grid .eleventh .white{
+    height: 50px;
+    background-color: white;
+}
+.grid .eleventh{
+    background: #212429;
+    color: white;
+}
+.grid .eleventh i{
+    color: #212429;
+    background: white;
+}
+
+.grid .eleventh .icon-2{
+    position: relative;
+    top: -20px;
+}
+
+/* Twelveth */
+.grid .twelveth article{
+    text-align: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
 @media (min-width: 1600px){
     section.banner{
         width: 100%;
