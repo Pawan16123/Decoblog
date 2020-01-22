@@ -307,6 +307,7 @@ clear fix
     justify-content: space-around;
     min-width: 25%;
     padding-top: 20px;
+
 }
 .grid-item {
     min-width: 300px;
@@ -607,6 +608,7 @@ footer p{
     font-size: 12px;
     margin: 10px 0;
     line-height: 20px;
+    font-weight: lighter;
 }
 footer h2{
     text-transform: uppercase;
@@ -628,12 +630,14 @@ footer .footer-comment{
 }
 footer .tweets{
     padding-left: 40px;
+    position: relative;
 }
 footer .main-footer .tweet .tweetme::before{
     font-family: "Font Awesome 5 Brands";
     content: "\f099";
     font-weight: 900;
-    left: -20px;
+    position: absolute;
+    left: 14px;
 }
 footer .insta .six-boxes{
     width: 360px;
@@ -647,7 +651,10 @@ footer .insta .oneof-six{
     background-color: white;
 }
 
-
+footer .latest-comment .comment1{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #65676a;
+}
 footer .copyright{
     height: 40px;
     color: lightslategray;
