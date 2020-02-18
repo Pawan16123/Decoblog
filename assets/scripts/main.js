@@ -1,6 +1,7 @@
 var banner = document.getElementsByClassName("banner");
 var newsLetter = document.getElementsByClassName("newsletter");
-
+var hamb = document.getElementsByClassName("hamburger");
+var mmenu = document.getElementsByClassName("social-media-mobile");
 // var body = document.getElementById("body");
 console.log(newsLetter[0]);
 
@@ -10,6 +11,11 @@ function triggerMe(){
     newsLetter[0].style.marginTop = banner[0].offsetHeight-47+"px" ;
     // console.log(width)
 }
+
+hamb[0].addEventListener("click",function(){
+    mmenu[0].classList.toggle("displaytoggle");
+
+});
 
 // Just for flex-box
 // var boxes = document.getElementsByClassName("boxes");
@@ -26,3 +32,4 @@ function triggerMe(){
 //     console.log(height);
 
 // }
+

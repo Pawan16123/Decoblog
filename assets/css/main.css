@@ -65,14 +65,16 @@ nav{
 header button:focus{
     outline: none;
 }
-header .social-media i{
+header .social-media i,
+header .social-media-mobile i{
     color: white;
     margin: 0 10px;
     position: relative;
     top: 20px;
     /* display: inline-block; */
 }
-header .social-media a{
+header .social-media a,
+header .social-media-mobile a{
     border-left: 1px solid black;
     border-bottom: 2px solid black;
     display: inline-block;
@@ -82,7 +84,8 @@ header button{
     border-left: 1px solid black;
     border-bottom: 2px solid black;
 }
-header .social-media a:last-child{
+header .social-media a:last-child,
+header .social-media-mobile a:last-child{
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 2px solid black;
@@ -666,12 +669,75 @@ footer .copyright{
     font-size: 12px;
 }
 
+.displaytoggle{
+    display: flex !important;
+}
 
+@media (max-width: 780px){
+    .social-media{
+        display: none;
+    }
+    .title-logoText img {
+        padding-left: 0px;
+    }
+    /* header .social-media-mobile{
+        display: flex;
+    } */
+    .social-media-mobile{
+        display: none;
+    }
+    section.newsletter{
+        flex-direction: column;
 
+    }
+    div.banner-txt{
+        font-size: 0.8rem;
+    }
+    .banner div.banner-right{
+        font-size: 0.6rem;
+    }
+    .banner .small-boxes{
+        display: none;
+    }
+    .newsletter h2{
+        white-space: normal;
+        padding-right: 0;
+        margin-bottom: 3px;
+    }
+    .newsletter input{
+        margin-bottom: 3px;
+    }
+    section.newsletter button{
+        content: "subscribe";
+    }
+
+    footer .main-footer{
+        flex-direction: column;
+        height: auto;
+    }
+    footer .main-footer>div {
+        margin: 15px 0;
+    }
+}
 
 @media (min-width: 1600px){
     section.banner{
         width: 100%;
 
     }
+
+}
+@media (max-width: 1580px){
+    div.grid{
+        width: auto;
+        display: block;
+        width: 800px;
+        margin: 30px auto;
+    }
+}
+@media (max-width: 850px){
+    div.grid{
+        width: 400px;
+    }
+
 }
