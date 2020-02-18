@@ -669,10 +669,20 @@ footer .copyright{
     font-size: 12px;
 }
 
-.displaytoggle{
-    display: flex !important;
+ 
+.social-media-mobile{
+    display: none;
 }
+.displaytoggle{
+    display: flex;
+}
+   
+@media (min-width: 781px){
 
+    .social-media-mobile{
+        display: none;
+    }
+}
 @media (max-width: 780px){
     .social-media{
         display: none;
@@ -683,9 +693,6 @@ footer .copyright{
     /* header .social-media-mobile{
         display: flex;
     } */
-    .social-media-mobile{
-        display: none;
-    }
     section.newsletter{
         flex-direction: column;
 
