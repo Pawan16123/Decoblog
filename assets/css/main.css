@@ -752,6 +752,11 @@ footer .copyright{
     header {
         padding: 0;
     }
+    .hamburger,
+     nav .social-media-mobile a{
+        border: none!important;
+    }
+
     div.banner-txt {
         font-size: 0.4rem;
     }
