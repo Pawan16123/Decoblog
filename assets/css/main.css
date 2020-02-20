@@ -676,7 +676,7 @@ footer .copyright{
 .displaytoggle{
     display: flex;
 }
-   
+  
 @media (min-width: 781px){
 
     .social-media-mobile{
@@ -748,3 +748,44 @@ footer .copyright{
     }
 
 }
+@media (max-width: 360px){
+    header {
+        padding: 0;
+    }
+    div.banner-txt {
+        font-size: 0.4rem;
+    }
+    .banner div.banner-right {
+        font-size: 0.4rem;
+        right: 20px;
+        
+    }
+    .banner-txt {
+        position: absolute;
+        width: 160px
+    }
+    div.grid {
+        width: 360px;
+    }
+    .title-logoText img {
+        height: 35px;
+    }
+
+
+    footer .main-footer {
+        overflow: hidden;
+    }
+    footer .about, footer .tweet, footer .insta, footer .footer-comment {
+        padding: 20px;
+    }
+    footer .about .signature {
+        width: 320px;
+        height: 130px;
+    }
+    footer .insta .oneof-six {
+        width: 106px;
+        height: 89px;
+    }
+
+
+} 
