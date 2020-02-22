@@ -2,6 +2,8 @@ var banner = document.getElementsByClassName("banner");
 var newsLetter = document.getElementsByClassName("newsletter");
 var hamb = document.getElementsByClassName("hamburger");
 var mmenu = document.getElementsByClassName("social-media-mobile");
+
+// alert(marginleft);
 // var body = document.getElementById("body");
 console.log(newsLetter[0]);
 
@@ -16,6 +18,31 @@ hamb[0].addEventListener("click",function(){
     mmenu[0].classList.toggle("displaytoggle");
 
 });
+if(document.documentElement.clientWidth >1600){
+    var style = window.getComputedStyle(document.getElementById('targetme'));
+    var marginleft = style.getPropertyValue('margin-left'); 
+    var values = 100 + parseInt(marginleft);
+    var value2 = 20 + parseInt(marginleft);
+    document.getElementsByClassName("banner-txt")[0].style.left = values+"px";
+    document.getElementsByClassName("banner-right")[0].style.right = value2+"px";
+    console.log(marginleft);
+    console.log(values);
+}
+
+window.addEventListener("resize", myFunction);
+function myFunction() {
+if(document.documentElement.clientWidth >1600){
+    var style = window.getComputedStyle(document.getElementById('targetme'));
+    var marginleft = style.getPropertyValue('margin-left'); 
+    var values = 100 + parseInt(marginleft);
+    var value2 = 20 + parseInt(marginleft);
+    document.getElementsByClassName("banner-txt")[0].style.left = values+"px";
+    document.getElementsByClassName("banner-right")[0].style.right = value2+"px";
+    console.log(marginleft);
+    console.log(values);
+    }
+}
+
 
 // Just for flex-box
 // var boxes = document.getElementsByClassName("boxes");
